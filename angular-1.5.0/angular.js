@@ -1144,7 +1144,7 @@ var csp = function() {
  * This example shows how to force jqLite using the `ngJq` directive to the `html` tag.
  ```html
  <!doctype html>
- <html ng-app ng-jq>
+ <html ng-js ng-jq>
  ...
  ...
  </html>
@@ -1154,7 +1154,7 @@ var csp = function() {
  * The library name must be available at the top most 'window'.
  ```html
  <!doctype html>
- <html ng-app ng-jq="jQueryLib">
+ <html ng-js ng-jq="jQueryLib">
  ...
  ...
  </html>
@@ -1634,7 +1634,7 @@ function angularInit(element, bootstrap) {
  *
  * <script src="angular.js"></script>
  * <script>
- *   var app = angular.module('demo', [])
+ *   var js = angular.module('demo', [])
  *   .controller('WelcomeController', function($scope) {
  *       $scope.greeting = 'Welcome!';
  *   });
@@ -1655,7 +1655,7 @@ function angularInit(element, bootstrap) {
  * * `strictDi` - disable automatic function annotation for the application. This is meant to
  *   assist in finding bugs which break minified code. Defaults to `false`.
  *
- * @returns {auto.$injector} Returns the newly created injector for this app.
+ * @returns {auto.$injector} Returns the newly created injector for this js.
  */
 function bootstrap(element, modules, config) {
   if (!isObject(config)) config = {};
@@ -3773,7 +3773,7 @@ var $$HashMapProvider = [function() {
  *   });
  * ```
  *
- * Sometimes you want to get access to the injector of a currently running Angular app
+ * Sometimes you want to get access to the injector of a currently running Angular js
  * from outside Angular. Perhaps, you want to inject and compile some markup after the
  * application has been bootstrapped. You can do this using the extra `injector()` added
  * to JQuery/jqLite elements. See {@link angular.element}.
@@ -6486,7 +6486,7 @@ function $CacheFactoryProvider() {
  *
  * **Note:** the `script` tag containing the template does not need to be included in the `head` of
  * the document, but it must be a descendent of the {@link ng.$rootElement $rootElement} (IE,
- * element with ng-app attribute), otherwise the template will be ignored.
+ * element with ng-js attribute), otherwise the template will be ignored.
  *
  * Adding via the `$templateCache` service:
  *
@@ -13002,7 +13002,7 @@ function $LocationProvider() {
     $browser.onUrlChange(function(newUrl, newState) {
 
       if (isUndefined(beginsWith(appBaseNoFile, newUrl))) {
-        // If we are navigating outside of the app then force a reload
+        // If we are navigating outside of the js then force a reload
         $window.location.href = newUrl;
         return;
       }
@@ -17420,7 +17420,7 @@ function adjustMatchers(matchers) {
  *
  * **Example**:  Consider the following case. <a name="example"></a>
  *
- * - your app is hosted at url `http://myapp.example.com/`
+ * - your js is hosted at url `http://myapp.example.com/`
  * - but some of your templates are hosted on other domains you control such as
  *   `http://srv01.assets.example.com/`,  `http://srv02.assets.example.com/`, etc.
  * - and you have an open redirect at `http://myapp.example.com/clickThru?...`.

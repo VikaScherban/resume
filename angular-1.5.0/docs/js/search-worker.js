@@ -30,7 +30,7 @@ searchDataRequest.onload = function() {
 searchDataRequest.open('GET', 'search-data.json');
 searchDataRequest.send();
 
-// The worker receives a message everytime the web app wants to query the index
+// The worker receives a message everytime the web js wants to query the index
 onmessage = function(oEvent) {
   var q = oEvent.data.q;
   var hits = index.search(q);
@@ -39,6 +39,6 @@ onmessage = function(oEvent) {
   hits.forEach(function(hit) {
     results.push(hit.ref);
   });
-  // The results of the query are sent back to the web app via a new message
+  // The results of the query are sent back to the web js via a new message
   postMessage({ e: 'query-ready', q: q, d: results });
 };

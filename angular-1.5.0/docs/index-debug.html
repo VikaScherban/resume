@@ -14,7 +14,7 @@
   <script type="text/javascript">
     // dynamically add base tag as well as css and javascript files.
     // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
-    // before the base attribute is added, causing 404 and terribly slow loading of the docs app.
+    // before the base attribute is added, causing 404 and terribly slow loading of the docs js.
     (function() {
       var indexFile = (location.pathname.match(/\/(index[^\.]*\.html)/) || ['', ''])[1],
           rUrl = /(#!\/|api|guide|misc|tutorial|error|index[^\.]*\.html).*$/,

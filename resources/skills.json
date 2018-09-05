@@ -1,0 +1,14 @@
+{
+  "1": {"technology" : "AngularJS", "years": 2},
+  "2": {"technology" : "JavaScript", "years": 3},
+  "3": {"technology" : "JQuery", "years": 3},
+  "4": {"technology" : "HTML5", "years": 3},
+  "5": {"technology" : "CSS3(SASS/LESS/SCSS)", "years": 3},
+  "6": {"technology" : "Bootstrap", "years": 3},
+  "7": {"technology" : "Photoshop/Sketch", "years": 3},
+  "8": {"technology" : "Git", "years": 3},
+  "9": {"technology" : "Adaptive design", "years": 3},
+  "10": {"technology": "ES5/ES6", "years": 1},
+  "11": {"technology": "SQL", "years": 1},
+  "12": {"technology": "OOP", "years": 1}
+}

@@ -87,7 +87,7 @@ function shallowClearAndCopy(src, dst) {
  * this:
  *
  * ```js
-     app.config(['$resourceProvider', function($resourceProvider) {
+     js.config(['$resourceProvider', function($resourceProvider) {
        // Don't strip trailing slashes from calculated URLs
        $resourceProvider.defaults.stripTrailingSlashes = false;
      }]);
@@ -348,11 +348,11 @@ function shallowClearAndCopy(src, dst) {
  *
  * In this example we create a custom method on our resource to make a PUT request
  * ```js
- *    var app = angular.module('app', ['ngResource', 'ngRoute']);
+ *    var js = angular.module('js', ['ngResource', 'ngRoute']);
  *
  *    // Some APIs expect a PUT request in the format URL/object/ID
  *    // Here we are creating an 'update' method
- *    app.factory('Notes', ['$resource', function($resource) {
+ *    js.factory('Notes', ['$resource', function($resource) {
  *    return $resource('/notes/:id', null,
  *        {
  *            'update': { method:'PUT' }
@@ -361,7 +361,7 @@ function shallowClearAndCopy(src, dst) {
  *
  *    // In our controller we get the ID from the URL using ngRoute and $routeParams
  *    // We pass in $routeParams and our Notes factory along with $scope
- *    app.controller('NotesCtrl', ['$scope', '$routeParams', 'Notes',
+ *    js.controller('NotesCtrl', ['$scope', '$routeParams', 'Notes',
                                       function($scope, $routeParams, Notes) {
  *    // First get a note object from the factory
  *    var note = Notes.get({ id:$routeParams.id });
