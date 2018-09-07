@@ -1,1 +1,22 @@
 <h2>Education</h2>
+
+<table class="table">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">University</th>
+        <th scope="col">Faculty</th>
+        <th scope="col">From year</th>
+        <th scope="col">To year</th>
+        <th scope="col">Level degree</th>
+    </tr>
+    <tr ng-repeat="ed in education">
+        <th scope="row">{{ $index + 1 }}</th>
+        <td>{{ ed.university }}</td>
+        <td>{{ ed.faculty }}</td>
+        <td>{{ ed.fromyear }}</td>
+        <td>{{ ed.toyear }}</td>
+        <td>{{ ed.level }}</td>
+    </tr>
+
+
+</table>

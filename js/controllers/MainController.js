@@ -25,24 +25,15 @@ resumeApp.config(['$routeProvider', '$locationProvider', function ($routeProvide
         });
 }]);
 
-resumeApp.controller('MainCtrl', function ($scope, $http, $location, GetService) {
+resumeApp.controller('MainCtrl', function ($scope, $http) {
+
     var url = "resources/info.json";
 
-    $scope.info = getHttp("resources/info.json");
-    $scope.educaton = getHttp("resources/info.json");
-    $scope.experience = getHttp("resources/info.json");
-    $scope.skills = getHttp("resources/info.json");
-
-
-    function getHttp(url){
-        $http.get(url).success(function (data) {
-            return data;
-        }).error(function (e) {
+    $http.get(url).success(function (data) {
+            $scope.info = data;
+    }).error(function (e) {
             alert("Error of get data.\n" + e);
-        });
-    }
-
-
+    });
 
 });
 
