@@ -1,0 +1,17 @@
+{
+  "1": {
+    "educationid": "1",
+    "development": "https://i.kyivgaz.ua/",
+    "support": "https://kgmarket.com.ua/;https://kg-shop.com;https://kg-service.com;https://publiclab.com.ua/;https://teplo.kg-shop.com/"
+  },
+  "2":{
+    "educationid": "2",
+    "development": "http://auto.ingo.ua/;https://balanews.kz",
+    "support": ""
+  },
+  "3":{
+    "educationid": "3",
+    "development": "http://enquire.com.ua/",
+    "support": "http://www.justingredients.co.uk/;http://www.linenchest.com/en/;http://antoshka.ua/;http://fizikatela.ru/"
+  }
+}

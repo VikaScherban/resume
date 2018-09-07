@@ -1,0 +1,4 @@
+resumeApp.factory('MyService', function() {
+
+});
+
