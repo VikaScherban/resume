@@ -1,4 +1,4 @@
-resumeApp.controller('EducationCtrl', function ($scope, $http, $location) {
+resumeApp.controller('EducationCtrl', function ($scope, $http) {
     var url = "resources/education.json";
 
     $http.get(url).success(function (data) {
@@ -6,4 +6,5 @@ resumeApp.controller('EducationCtrl', function ($scope, $http, $location) {
     }).error(function (e) {
         alert("Error of get data.\n" + e);
     });
+
 });

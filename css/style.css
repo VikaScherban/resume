@@ -52,3 +52,9 @@ h2{
 td,th{
     padding:  10px;
 }
+
+.detail-btn{
+    border-radius: 0;
+    border: 1px solid #000;
+    background-color: #fff;
+}

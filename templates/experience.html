@@ -1,1 +1,26 @@
 <h2>Experience</h2>
+
+<table class="table">
+    <tr>
+        <th  scope="col">Company</th>
+        <th  scope="col">Site</th>
+        <th  scope="col">Start work</th>
+        <th  scope="col">Finish work</th>
+        <th scope="col">Detail</th>
+    </tr>
+    <tr ng-repeat-start="ex in experience">
+        <td>{{ ex.company }}</td>
+        <td><a href="{{ ex.siteurl }}" target="_blank"> {{ ex.siteurl }}</a></td>
+        <td>{{ ex.startdate }}</td>
+        <td>{{ ex.enddate }}</td>
+        <td> <button type="button" class="btn detail-btn" ng-click="showDetail(ex, showDetailClick  = !showDetailClick )">Detail</button></td>
+    </tr>
+    <tr ng-repeat-end ng-if="isSelected(ex, showDetailClick)">
+        <td colspan="5">
+            <h3>{{ selectExp.company }} Detail</h3>
+
+            <div ng-if="experianceDetail.development">Development: {{ experianceDetail.development }} </div>
+            <div ng-if="experianceDetail.support">Support: {{ experianceDetail.support }} </div>
+        </td>
+    </tr>
+</table>

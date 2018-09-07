@@ -26,7 +26,6 @@ resumeApp.config(['$routeProvider', '$locationProvider', function ($routeProvide
 }]);
 
 resumeApp.controller('MainCtrl', function ($scope, $http) {
-
     var url = "resources/info.json";
 
     $http.get(url).success(function (data) {

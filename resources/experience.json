@@ -1,17 +1,20 @@
 {
   "1": {
+    "id": "1",
     "company": "PJSC Kyivgas",
     "siteurl": "https://kyivgaz.ua/",
     "startdate": "August 2017",
     "enddate": "now"
   },
   "2": {
+    "id": "2",
     "company": "EvolTech",
     "siteurl": "https://www.evol.tech/",
     "startdate": "April 2017",
     "enddate": "July 2017"
   },
   "3": {
+    "id": "3",
     "company": "OpsWay",
     "siteurl": "https://opsway.com/",
     "startdate": "June 2015",
