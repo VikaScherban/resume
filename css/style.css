@@ -58,3 +58,15 @@ td,th{
     border: 1px solid #000;
     background-color: #fff;
 }
+.skill-block{
+    height: 300px;
+}
+.skill-img-block{
+    max-height: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.skill-image{
+    width: 200px;
+    height: auto;
+}
