@@ -9,7 +9,7 @@
         <th scope="col">To year</th>
         <th scope="col">Level degree</th>
     </tr>
-    <tr ng-repeat="ed in education">
+    <tr ng-repeat="ed in education" ng-click="showModalInfo(event, ed)" class="education">
         <th scope="row">{{ $index + 1 }}</th>
         <td>{{ ed.university }}</td>
         <td>{{ ed.faculty }}</td>

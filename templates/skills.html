@@ -2,8 +2,10 @@
 
 <div class="row">
     <div class="col-md-4 skill-block"  ng-repeat="skill in skills">
-        <div class="skill-img-block"><img src="{{ skill.imageurl }}" class="skill-image"> </div>
+        <div class="skill-img-block"><img ng-src="{{ skill.imageurl }}" class="skill-image"> </div>
         <div>Technology: {{ skill.technology }}</div>
         <div>Year(s): {{ skill.years }}</div>
     </div>
 </div>
+
+<div class="text-center" ng-hide="moreHide"><button type="button" class="more-btn" ng-click="showMore()">More</button></div>

@@ -22,5 +22,9 @@
   "21": {"technology" : "Adaptive design", "years": 3, "imageurl": "images/ad"},
   "22": {"technology": "ES5/ES6", "years": 1, "imageurl": "images/es6.jpeg"},
   "23": {"technology": "SQL", "years": 1, "imageurl": "images/sql.png"},
-  "24": {"technology": "OOP", "years": 1, "imageurl": "images/oop.jpeg"}
+  "24": {"technology": "OOP", "years": 1, "imageurl": "images/oop.jpeg"},
+  "25": {"technology" : "AngularJS", "years": 2, "imageurl": "images/angular.png"},
+  "26": {"technology" : "JavaScript", "years": 3, "imageurl": "images/js.png"},
+  "27": {"technology" : "JQuery", "years": 3,"imageurl": "images/jquery.gif"},
+  "28": {"technology" : "HTML5", "years": 3, "imageurl": "images/html.png"}
 }

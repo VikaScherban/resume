@@ -1,0 +1,13 @@
+<div class="modal-dialog  educationDetails">
+    <div class="close" ng-click="cancel()" area-hidden="true">x</div>
+    <div id="educationModal">
+        <div class="modal-header">
+            <h4 class="modal-title">{{ selectedEducation.university }}</h4>
+        </div>
+        <div class="modal-body maps-body">
+            <div>Faculty: {{ selectedEducation.faculty }} </div>
+            <div>Degree: {{ selectedEducation.level }}</div>
+            <div><img ng-src="{{ educationInfo.imageurl }}" class="diploma-img"></div>
+        </div>
+    </div>
+</div>

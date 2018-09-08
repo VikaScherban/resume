@@ -1,5 +1,6 @@
 {
   "1": {
+    "id": "1",
     "university": "Taras Shevchenko National University of Kiev",
     "faculty": "Faculty of Information Technologies",
     "fromyear": "2016",
@@ -7,6 +8,7 @@
     "level": "master"
   },
   "2": {
+    "id": "2",
     "university": "Taras Shevchenko National University of Kiev",
     "faculty": "Cybernetics",
     "fromyear": "2012",

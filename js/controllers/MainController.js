@@ -1,6 +1,6 @@
 'use strict';
 
-var resumeApp = angular.module('resumeApp', ['ngRoute', 'ngResource']);
+var resumeApp = angular.module('resumeApp', ['ngRoute', 'ngResource', 'ui.bootstrap']);
 
 resumeApp.config(['$routeProvider', '$locationProvider', function ($routeProvide) {
     $routeProvide
