@@ -18,10 +18,11 @@
         <div class="col-md-3">
             <h3 class="menu-title">Menu</h3>
             <ul>
-                <li><a href="#/">Main</a></li>
-                <li><a href="#/education">Education</a></li>
-                <li><a href="#/experience">Experience</a></li>
-                <li><a href="#/skills">Skills</a></li>
+                <li ng-repeat="item in menu" >
+                    <a ng-class="{'active': item.id == states.activeItem}"
+                       ng-click="states.activeItem=item.id"
+                       ng-href="{{ item.href }}">{{ item.text }}</a>
+                </li>
             </ul>
         </div>
         <div class="col-md-7">

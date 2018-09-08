@@ -27,6 +27,31 @@ resumeApp.config(['$routeProvider', '$locationProvider', function ($routeProvide
 
 resumeApp.controller('MainCtrl', function ($scope, $http) {
     var url = "resources/info.json";
+    $scope.menu = [
+        {
+            id: "1",
+            text: "Main",
+            href: "#/"
+        },
+        {
+            id: "2",
+            text: "Education",
+            href: "#/education"
+        },
+        {
+            id: "3",
+            text: "Experience",
+            href: "#/experience"
+        },
+        {
+            id: "4",
+            text: "Skills",
+            href: "#/skills"
+        }
+    ];
+
+    $scope.states = {};
+    $scope.states.activeItem = '1';
 
     $http.get(url).success(function (data) {
             $scope.info = data;
